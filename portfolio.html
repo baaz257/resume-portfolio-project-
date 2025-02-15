@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            transition: background-color 0.5s, color 0.5s;
+        }
+        header {
+            background: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        section {
+            padding: 40px;
+            text-align: center;
+            background: white;
+            margin: 20px auto;
+            width: 80%;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeIn 1s forwards;
+        }
+        .project {
+            background: #ddd;
+            padding: 20px;
+            margin: 20px auto;
+            width: 60%;
+            border-radius: 8px;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #333;
+            color: white;
+            margin-top: 20px;
+        }
+        
+        .dark-mode section {
+            background: #333;
+            color: white;
+        }
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    
+    <header>
+        <h1>Jaskirat singh sodhi</h1>
+        <p>BCA Student | Aspiring Software Developer</p>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I m a BCA student passionate about software development, specializing in Java, DBMS, and Data Structures. Eager to learn and contribute to innovative projects. Looking for internship and job opportunities to enhance my skills.".</p>
+    </section>
+    
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>c </li>
+            <li>SQL & DBMS</li>
+            <li>HTML, CSS, JavaScript</li>
+            
+        </ul>
+    </section>
+    
+    <section id="projects">
+        <div class="project">
+            <h2>Student Management System</h2>
+            <p>CRUD application to manage student records using Java and SQL.</p>
+        </div>
+    </section>
+    
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Email: jaskiratsodhi09@gmail.com</p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/jaskirat-singh-sodhi-b87201351/">my LinkedIn Profile</a></p>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 jaskirat singh sodhi</p>
+    </footer>
+    
+</body>
+</html>
